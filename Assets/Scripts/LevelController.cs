@@ -21,6 +21,7 @@ public class LevelController : MonoBehaviour
         if (collision.gameObject.GetComponent<PlayerController>())
         {
             Debug.Log("Player collided");
+            LevelManager.Instance.MarkCurrentLevelComplete();
         }
     }
 }
