@@ -337,6 +337,7 @@ MonoBehaviour:
   levelName: Level1
   levelScene: {fileID: 1330862251}
   playScene: {fileID: 67557370}
+  SoundManager: {fileID: 0}
 --- !u!1 &226274145
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,6 +476,7 @@ MonoBehaviour:
   levelName: Level2
   levelScene: {fileID: 0}
   playScene: {fileID: 0}
+  SoundManager: {fileID: 0}
 --- !u!1 &289704287
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,6 +888,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instance: {fileID: 0}
+  Sounds:
+  - soundType: 0
+    soundClip: {fileID: 0}
+  - soundType: 0
+    soundClip: {fileID: 0}
+  soundEffect: {fileID: 316975921}
+  soundMusic: {fileID: 337545366}
 --- !u!4 &460568536
 Transform:
   m_ObjectHideFlags: 0
@@ -1857,6 +1866,7 @@ MonoBehaviour:
   levelName: Level3
   levelScene: {fileID: 0}
   playScene: {fileID: 0}
+  SoundManager: {fileID: 0}
 --- !u!1 &2061146139
 GameObject:
   m_ObjectHideFlags: 0

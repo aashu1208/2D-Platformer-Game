@@ -21,12 +21,13 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        Debug.Log("Awake");
         rb = gameObject.GetComponent<Rigidbody2D>();
     }
     // Start is called before the first frame update
     void Start()
     {
-        
+        Debug.Log("Start");
     }
 
     // Update is called once per frame
@@ -39,8 +40,8 @@ public class PlayerController : MonoBehaviour
         PlayerMovementAnimation(horizontal, vertical);
         MoveCharacter(horizontal, vertical);
 
-        
 
+        Debug.Log("Update");
 
 
     }
@@ -107,6 +108,7 @@ public class PlayerController : MonoBehaviour
 
         if (vertical>0 && isGrounded)
         {
+            
             anim.SetTrigger("Jump");
             rb.velocity = new Vector2(rb.velocity.x, jump);
             isJumping = true;
@@ -180,5 +182,41 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("StaffAttck", false);
         }
     }
+    /*
+    public void OnDisable()
+    {
+        Debug.Log("OnDisable");
+    }
 
+    private void OnDestroy()
+    {
+        Debug.Log("OnDestroy");
+    }
+
+    private void OnMouseDown()
+    {
+        Debug.Log("OnMouseDown");
+    }
+
+    private void FixedUpdate()
+    {
+        Debug.Log("FixedUpdate");
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("OnCollisionEnter2D");
+    }
+
+    private void LateUpdate()
+    {
+        Debug.Log("LateUpdate");
+    }
+
+    private void OnEnable()
+    {
+        Debug.Log("OnEnable");
+    }
+    */
+    
 }
